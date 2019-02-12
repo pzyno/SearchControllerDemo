@@ -15,9 +15,9 @@ self.navigationItem.hidesSearchBarWhenScrolling = false
 self.tableView.tableHeaderView = searchController.searchBar
 }
 
-得到searchcontroller的searchbar的textFiled
+使用KVO得到searchcontroller的searchbar的textFiled
 let searchField = searchController.searchBar.value(forKey: "_searchField") as! UITextField
-
+参考:https://www.jianshu.com/p/c07a295e8aaf
 
 仍存在的问题:
 在demo中searchcontroller的动画没有问题,在项目中可能会出现问题.是不是结合tabbatcontroller导致的?
